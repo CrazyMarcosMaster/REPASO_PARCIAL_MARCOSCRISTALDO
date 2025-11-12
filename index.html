@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="rotar-texto">Bienvenido a Mi Sitio Personal</h1>
+    </header>
+
+    <main>
+        <section class="descripcion">
+            <p>Explora mis páginas:</p>
+            <ul>
+                <li><strong>Perfil Profesional:</strong> Conoce mi trayectoria y redes sociales.</li>
+                <li><strong>Galería:</strong> Observa mis imágenes y animaciones favoritas.</li>
+                <li><strong>Blog:</strong> Descubre mis gustos personales e intereses.</li>
+            </ul>
+        </section>
+
+        <div class="botones">
+            <a href="perfil.html" class="boton animado1">Perfil Profesional</a>
+            <a href="galeria.html" class="boton animado2">Galería</a>
+            <a href="blog.html" class="boton animado3">Blog</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Creado por <strong>Marcos Cristaldo</strong> - <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        const fecha = new Date();
+        document.getElementById("fecha").textContent = fecha.toLocaleDateString();
+    </script>
+</body>
+</html>
