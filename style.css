@@ -6,6 +6,15 @@ body {
     padding: 0;
 }
 
+/* TEXTO ROTATIVO */
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.rotar-texto {
+    animation: girar 10s linear infinite;
+} 
+
 /* BOTONES GENERALES */
 .boton {
     display: inline-block;
@@ -166,3 +175,4 @@ footer {
     color: white;
     padding: 10px;
 }
+
